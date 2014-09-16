@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+    Title:
+    Author:
+    Licence:
+-->
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <base href="../"></base>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <script src="dest/almight.lib.js"></script>
+<!--
+    ******** ゲームに読み込まれるCSS ********
+-->
+    <style type="text/css" data-append="yes">
+    #almight-template {
+        color: #000;
+    }
+    </style>
+
+<!--
+    ******** ゲームに読み込まれるJavaScript ********
+-->
+    <script type="text/javascript" data-append="yes">
+$(function(){
+    /**
+     * ここに処理を書く
+     */
+
+    /**
+     * タグの拡張
+     */
+    $.extend(almight.tag, {
+        // タグを追加したい場合は、ここにタグ名と処理を書く
+        'template': function(params){
+            return 1;
+        }
+    });
+});
+    </script>
+</head>
+<body>
+
+<!--
+    ******** ゲームに読み込まれるHTML ********
+-->
+<div id="almight-battle-window" data-append="yes" data-selector="body" data-mobile-selector="body">
+    <div class="time_line_div">
+        <ul>
+            <li rel="{{id}}"></li>
+        </ul>
+    </div>
+    <div class="team our">
+        <ul>
+            <li rel="{{id}}"></li>
+            <li rel="{{id}}"></li>
+            <li rel="{{id}}"></li>
+            <li rel="{{id}}"></li>
+            <li rel="{{id}}"></li>
+            <li rel="{{id}}"></li>
+        </ul>
+    </div>
+    <div class="team enemy">
+        <ul>
+            <li rel="{{id}}"></li>
+            <li rel="{{id}}"></li>
+            <li rel="{{id}}"></li>
+            <li rel="{{id}}"></li>
+            <li rel="{{id}}"></li>
+            <li rel="{{id}}"></li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
